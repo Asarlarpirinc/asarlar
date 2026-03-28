@@ -433,7 +433,7 @@
     "description": "1995'ten günümüze Çorum Kargı'nın bereketli topraklarından sofranıza. ISO 22000, Helal Gıda sertifikalı, %100 GES destekli modern pirinç ve tahıl işleme tesisi.",
     "url": "https://asarlarpirinc.com",
     "telephone": "+905300300519",
-    "email": "t.kasikci@hotmail.com",
+    "email": "asarlarpirinc@gmail.com",
     "foundingDate": "1995",
     "address": {
       "@type": "PostalAddress",
@@ -494,7 +494,7 @@
 
         <!-- Language Switcher -->
         <div style="position:relative;" id="lang-switcher">
-          <button onclick="toggleLangMenu(event)" style="display:flex;align-items:center;gap:0.4rem;background:none;border:1px solid rgba(0,0,0,0.14);border-radius:6px;padding:0.42rem 0.7rem;cursor:pointer;font-family:'Poppins',sans-serif;font-size:0.78rem;font-weight:600;color:#444;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='#1B5C38';this.style.color='#1B5C38'" onmouseout="this.style.borderColor='rgba(0,0,0,0.14)';this.style.color='#444'">
+          <button onclick="toggleLangMenu(event)" aria-label="Dil seçin" aria-haspopup="true" aria-expanded="false" id="lang-btn" style="display:flex;align-items:center;gap:0.4rem;background:none;border:1px solid rgba(0,0,0,0.14);border-radius:6px;padding:0.42rem 0.7rem;cursor:pointer;font-family:'Poppins',sans-serif;font-size:0.78rem;font-weight:600;color:#444;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='#1B5C38';this.style.color='#1B5C38'" onmouseout="this.style.borderColor='rgba(0,0,0,0.14)';this.style.color='#444'">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             <span id="lang-label">TR</span>
             <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg>
@@ -686,7 +686,7 @@
 
   <!-- Scroll indicator -->
   <div style="position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:0.5rem; z-index:2;">
-    <span style="font-size:0.65rem; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.35);">Keşfet</span>
+    <span style="font-size:0.65rem; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.70);">Keşfet</span>
     <div style="width:1.5px; height:40px; background:linear-gradient(to bottom, rgba(255,255,255,0.6), transparent); animation: scrollPulse 2s ease-in-out infinite;"></div>
   </div>
 </section>
@@ -932,7 +932,7 @@
     <div style="display:grid; grid-template-columns:repeat(3,1fr) 1.15fr; gap:1.5rem; align-items:stretch;">
 
       <!-- Kart 1: Baldo Pirinç -->
-      <div class="fade-in card-hover product-card" data-glow data-product="baldo" onclick="openProduct('baldo')" style="background:#fff; border-radius:20px; overflow:hidden; border:1px solid rgba(0,0,0,0.08); box-shadow:0 2px 16px rgba(0,0,0,0.06); display:flex; flex-direction:column; cursor:pointer;">
+      <div class="fade-in card-hover product-card" data-glow data-product="baldo" onclick="openProduct('baldo')" onkeydown="if(event.key==='Enter'||event.key===' ')openProduct('baldo')" tabindex="0" role="button" aria-label="Baldo Pirinç ürün detayı" style="background:#fff; border-radius:20px; overflow:hidden; border:1px solid rgba(0,0,0,0.08); box-shadow:0 2px 16px rgba(0,0,0,0.06); display:flex; flex-direction:column; cursor:pointer;">
         <!-- Product image area -->
         <div style="background:linear-gradient(160deg,#f0f7f2 0%,#e8f5e9 100%); padding:2rem 1.5rem 0; display:flex; align-items:center; justify-content:center; min-height:260px; position:relative; overflow:hidden;">
           <!-- Gold pattern top -->
@@ -959,7 +959,7 @@
       </div>
 
       <!-- Kart 2: Bulgur -->
-      <div class="fade-in fade-in-delay-1 card-hover product-card" data-glow data-product="bulgur" onclick="openProduct('bulgur')" style="background:#fff; border-radius:20px; overflow:hidden; border:1px solid rgba(0,0,0,0.08); box-shadow:0 2px 16px rgba(0,0,0,0.06); display:flex; flex-direction:column; cursor:pointer;">
+      <div class="fade-in fade-in-delay-1 card-hover product-card" data-glow data-product="bulgur" onclick="openProduct('bulgur')" onkeydown="if(event.key==='Enter'||event.key===' ')openProduct('bulgur')" tabindex="0" role="button" aria-label="Bulgur ürün detayı" style="background:#fff; border-radius:20px; overflow:hidden; border:1px solid rgba(0,0,0,0.08); box-shadow:0 2px 16px rgba(0,0,0,0.06); display:flex; flex-direction:column; cursor:pointer;">
         <div style="background:linear-gradient(160deg,#fdf6e3 0%,#fef9ee 100%); padding:2rem 1.5rem 0; display:flex; align-items:center; justify-content:center; min-height:260px; position:relative; overflow:hidden;">
           <div style="position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#D4A820,#E8C547,#D4A820);"></div>
           <img src="urun/bulgur.png" alt="Bulgur" style="height:220px; width:auto; object-fit:contain; filter:drop-shadow(0 12px 24px rgba(0,0,0,0.18)); transition:transform 0.4s ease; position:relative; z-index:1;" onmouseover="this.style.transform='translateY(-8px) scale(1.04)'" onmouseout="this.style.transform=''" />
@@ -983,7 +983,7 @@
       </div>
 
       <!-- Kart 3: Mercimek -->
-      <div class="fade-in fade-in-delay-2 card-hover product-card" data-glow data-product="mercimek" onclick="openProduct('mercimek')" style="background:#fff; border-radius:20px; overflow:hidden; border:1px solid rgba(0,0,0,0.08); box-shadow:0 2px 16px rgba(0,0,0,0.06); display:flex; flex-direction:column; cursor:pointer;">
+      <div class="fade-in fade-in-delay-2 card-hover product-card" data-glow data-product="mercimek" onclick="openProduct('mercimek')" onkeydown="if(event.key==='Enter'||event.key===' ')openProduct('mercimek')" tabindex="0" role="button" aria-label="Kırmızı Mercimek ürün detayı" style="background:#fff; border-radius:20px; overflow:hidden; border:1px solid rgba(0,0,0,0.08); box-shadow:0 2px 16px rgba(0,0,0,0.06); display:flex; flex-direction:column; cursor:pointer;">
         <div style="background:linear-gradient(160deg,#fdf0e8 0%,#fef3eb 100%); padding:2rem 1.5rem 0; display:flex; align-items:center; justify-content:center; min-height:260px; position:relative; overflow:hidden;">
           <div style="position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#D4A820,#E8C547,#D4A820);"></div>
           <img src="urun/mercimek.png" alt="Kırmızı Mercimek" style="height:220px; width:auto; object-fit:contain; filter:drop-shadow(0 12px 24px rgba(0,0,0,0.18)); transition:transform 0.4s ease; position:relative; z-index:1;" onmouseover="this.style.transform='translateY(-8px) scale(1.04)'" onmouseout="this.style.transform=''" />
@@ -1441,7 +1441,7 @@
               </div>
               <div>
                 <div data-i18n="map.email.title" style="font-size:0.75rem;font-weight:700;color:#6B7280;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.2rem;">E-posta</div>
-                <a href="mailto:t.kasikci@hotmail.com" style="font-size:0.875rem;font-weight:600;color:#1B5C38;text-decoration:none;">t.kasikci@hotmail.com</a>
+                <a href="mailto:asarlarpirinc@gmail.com" style="font-size:0.875rem;font-weight:600;color:#1B5C38;text-decoration:none;">asarlarpirinc@gmail.com</a>
               </div>
             </div>
 
@@ -1773,7 +1773,7 @@
     }
   }, { passive: true });
 
-  // ── Contact form → sends to t.kasikci@hotmail.com ─
+  // ── Contact form → sends to asarlarpirinc@gmail.com ─
   function handleSubmit(e) {
     e.preventDefault();
     const name    = document.getElementById('f-name').value;
@@ -1782,7 +1782,7 @@
     const subject = document.getElementById('f-subject').value || 'Web İletişim Formu';
     const message = document.getElementById('f-message').value;
     const body = `Ad Soyad: ${name}\nŞirket: ${company}\nE-posta: ${email}\n\n${message}`;
-    window.location.href = `mailto:t.kasikci@hotmail.com?subject=${encodeURIComponent('Web Formu: ' + subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:asarlarpirinc@gmail.com?subject=${encodeURIComponent('Web Formu: ' + subject)}&body=${encodeURIComponent(body)}`;
     e.target.style.display = 'none';
     document.getElementById('success-msg').style.display = 'block';
   }
@@ -2091,6 +2091,35 @@
       'map.addr.val':'قضاء كارجي<br/>تشوروم، تركيا',
       'map.tel.title':'الهاتف','map.email.title':'البريد الإلكتروني',
       'map.wa.title':'واتساب','map.wa.link':'إرسال رسالة →','map.btn':'الحصول على الاتجاهات',
+      'drawer.cta':'احصل على عرض',
+      'drawer.variants':'الأصناف','drawer.pkg':'التعبئة','drawer.cert.label':'الشهادة',
+      'drawer.baldo.cat':'مجموعة الأرز','drawer.baldo.name':'أرز بالدو',
+      'drawer.baldo.desc':'أرز فاخر مفروز بتقنية Laser Sortex بدون تدخل بشري، بهدف صفر هدر. تُزرع حبوبنا في أراضي تشوروم كارجي الخصبة وتُعالج بدقة بخبرة 30 عامًا.',
+      'drawer.baldo.f1':'فرز بصري بتقنية Laser Sortex',
+      'drawer.baldo.f2':'خط إنتاج آلي بالكامل - صفر تلوث',
+      'drawer.baldo.f3':'معتمد ISO 22000 وحلال',
+      'drawer.baldo.f4':'إنتاج محايد للكربون بالطاقة الشمسية',
+      'drawer.baldo.t1':'أوسمانجيك','drawer.baldo.t2':'بالدو','drawer.baldo.t3':'كارجي المحلي',
+      'drawer.baldo.sizes':'500g · 1kg · 2.5kg · 5kg',
+      'drawer.baldo.extra':'🍚 الطهي: قوام كريمي - نتائج مثالية في طبق الأرز والأرز بالحليب.',
+      'drawer.bulgur.cat':'مجموعة الحبوب','drawer.bulgur.name':'البرغل',
+      'drawer.bulgur.desc':'أنواع برغل مغذية مُعالجة بالطريقة التقليدية من القمح الكامل.',
+      'drawer.bulgur.f1':'قمح كامل - طبيعي 100% بدون إضافات',
+      'drawer.bulgur.f2':'محتوى ألياف عالٍ (8%) وبروتين (12%)',
+      'drawer.bulgur.f3':'طريقة تجفيف تقليدية مع نظافة حديثة',
+      'drawer.bulgur.f4':'معتمد حلال وISO 22000',
+      'drawer.bulgur.t1':'برغل ناعم','drawer.bulgur.t2':'برغل متوسط','drawer.bulgur.t3':'برغل كفتة',
+      'drawer.bulgur.sizes':'500g · 1kg · 2.5kg',
+      'drawer.bulgur.extra':'🌾 القيمة الغذائية: ~340 سعرة لكل 100g، 12g بروتين.',
+      'drawer.mercimek.cat':'مجموعة البقوليات','drawer.mercimek.name':'العدس الأحمر',
+      'drawer.mercimek.desc':'أنواع بقوليات غنية بالبروتين تُعالج على خط إنتاج آلي بالكامل في منشأتنا المعتمدة ISO 22000 وBRC.',
+      'drawer.mercimek.f1':'محتوى بروتين عالٍ - 26% بروتين نباتي',
+      'drawer.mercimek.f2':'خط إنتاج آلي كامل - صحي وآمن غذائيًا',
+      'drawer.mercimek.f3':'شهادة مزدوجة: BRC وISO 22000',
+      'drawer.mercimek.f4':'غني بالحديد وحمض الفوليك',
+      'drawer.mercimek.t1':'عدس أحمر','drawer.mercimek.t2':'عدس أخضر','drawer.mercimek.t3':'حمص',
+      'drawer.mercimek.sizes':'500g · 1kg · 2.5kg',
+      'drawer.mercimek.extra':'💪 القيمة الغذائية: ~352 سعرة لكل 100g، 26g بروتين - بطل البروتين النباتي.',
     }
   };
 
@@ -2136,12 +2165,17 @@
   function toggleLangMenu(e) {
     e.stopPropagation();
     const menu = document.getElementById('lang-menu');
-    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    const btn = document.getElementById('lang-btn');
+    const isOpen = menu.style.display !== 'none';
+    menu.style.display = isOpen ? 'none' : 'block';
+    if (btn) btn.setAttribute('aria-expanded', String(!isOpen));
   }
   // close on outside click
   document.addEventListener('click', () => {
     const menu = document.getElementById('lang-menu');
+    const btn = document.getElementById('lang-btn');
     if (menu) menu.style.display = 'none';
+    if (btn) btn.setAttribute('aria-expanded', 'false');
   });
 
 
@@ -2341,9 +2375,9 @@
 </script>
 
 <!-- ========== ÜRÜN DRAWER ========== -->
-<div id="product-overlay" onclick="closeProduct()" style="position:fixed;inset:0;background:rgba(10,25,15,0.55);z-index:200;pointer-events:none;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);"></div>
+<div id="product-overlay" onclick="closeProduct()" aria-hidden="true" style="position:fixed;inset:0;background:rgba(10,25,15,0.55);z-index:200;pointer-events:none;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);"></div>
 
-<div id="product-drawer" style="position:fixed;top:0;right:0;width:50%;max-width:680px;min-width:320px;height:100%;z-index:201;background:#fff;overflow-y:auto;display:flex;flex-direction:column;box-shadow:-24px 0 80px rgba(0,0,0,0.22);">
+<div id="product-drawer" role="dialog" aria-modal="true" aria-label="Ürün Detayı" style="position:fixed;top:0;right:0;width:50%;max-width:680px;min-width:320px;height:100%;z-index:201;background:#fff;overflow-y:auto;display:flex;flex-direction:column;box-shadow:-24px 0 80px rgba(0,0,0,0.22);">
 
   <!-- Gold stripe top -->
   <div style="position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid rgba(0,0,0,0.06);">
@@ -2457,64 +2491,38 @@
 </style>
 
 <script>
-  // ── Product data ───────────────────────────────
-  const PRODUCTS = {
-    baldo: {
-      category: 'Pirinç Grubu',
-      name: 'Baldo Pirinç',
-      img: 'urun/pirinç.png',
-      bg: 'linear-gradient(160deg,#f0f7f2 0%,#e8f5e9 100%)',
-      desc: 'Lazer Sortex teknolojisiyle el değmeden ayıklanmış, sıfır fire hedefli premium pirinç çeşitlerimiz. Çorum Kargı bölgesinin bereketli topraklarında yetişen taneciğimiz; 30 yıllık tecrübemizle titizlikle işlenerek, her kepçede Anadolu\'nun özünü sofranıza taşır.',
-      features: [
-        'Lazer Sortex teknolojisiyle optik ayıklama',
-        'El değmez tam otomasyon hattı — sıfır kirletici',
-        'ISO 22000 & Helal Gıda sertifikalı',
-        'GES destekli karbon nötr üretim'
-      ],
-      tags: ['Osmancık', 'Baldo', 'Kargı Yöresel'],
-      sizes: '500g · 1kg · 2.5kg · 5kg',
-      cert: 'ISO 22000',
-      extra: '🍚 Pişirim: Yüksek nişasta içeriğiyle kremamsı dokusu, pilavda ve sütlaçta mükemmel sonuç verir.'
-    },
-    bulgur: {
-      category: 'Tahıl Grubu',
-      name: 'Bulgur',
-      img: 'urun/bulgur.png',
-      bg: 'linear-gradient(160deg,#fdf6e3 0%,#fef9ee 100%)',
-      desc: 'Geleneksel yöntemle işlenmiş, tam buğdaydan üretilmiş besleyici bulgur çeşitlerimiz. Modern tesisimizde titizlikle işlenen bulgurlarımız, yüksek lif ve protein içeriğiyle sağlıklı beslenmede temel gıda kaynağı olmaktadır.',
-      features: [
-        'Tam buğdaydan — hiç katkısız doğal işlem',
-        'Yüksek lif (%8) & protein (%12) içeriği',
-        'Geleneksel kurutma yöntemi, modern hijyen',
-        'Helal Gıda & ISO 22000 sertifikalı'
-      ],
-      tags: ['İnce Bulgur', 'Orta Bulgur', 'Köftelik'],
-      sizes: '500g · 1kg · 2.5kg',
-      cert: 'Helal Gıda',
-      extra: '🌾 Besin Değeri: 100g başına ~340 kcal, 12g protein, 8g lif — doyurucu ve besleyici.'
-    },
-    mercimek: {
-      category: 'Bakliyat Grubu',
-      name: 'Kırmızı Mercimek',
-      img: 'urun/mercimek.png',
-      bg: 'linear-gradient(160deg,#fdf0e8 0%,#fef3eb 100%)',
-      desc: 'Protein açısından zengin, tam otomasyonlu hatta işlenmiş bakliyat çeşitlerimiz. ISO 22000 ve BRC sertifikalı tesisimizde hijyenik koşullarda işlenen mercimeklerimiz, her porsiyonda kaliteli bitkisel protein ve demir mineralini sofranıza sunar.',
-      features: [
-        'Yüksek protein içeriği — %26 bitkisel protein',
-        'Tam otomasyon hattı — hijyenik & gıda güvenli',
-        'BRC & ISO 22000 çift sertifikalı',
-        'Demir ve folik asit açısından zengin'
-      ],
-      tags: ['Kırmızı Mercimek', 'Yeşil Mercimek', 'Nohut'],
-      sizes: '500g · 1kg · 2.5kg',
-      cert: 'BRC',
-      extra: '💪 Besin Değeri: 100g başına ~352 kcal, 26g protein — bitkisel protein şampiyonu.'
-    }
+  // ── Product data (language-aware) ─────────────
+  const PRODUCT_STATIC = {
+    baldo:    { img: 'urun/pirinç.png', bg: 'linear-gradient(160deg,#f0f7f2 0%,#e8f5e9 100%)', cert: 'ISO 22000' },
+    bulgur:   { img: 'urun/bulgur.png', bg: 'linear-gradient(160deg,#fdf6e3 0%,#fef9ee 100%)', cert: 'Helal Gıda' },
+    mercimek: { img: 'urun/mercimek.png', bg: 'linear-gradient(160deg,#fdf0e8 0%,#fef3eb 100%)', cert: 'BRC' }
   };
 
+  function getProduct(key) {
+    const L = currentLang;
+    const s = PRODUCT_STATIC[key];
+    if (!s) return null;
+    const T = t[L] || t['tr'];
+    return {
+      category: T['drawer.' + key + '.cat'] || '',
+      name:     T['drawer.' + key + '.name'] || '',
+      img:      s.img,
+      bg:       s.bg,
+      desc:     T['drawer.' + key + '.desc'] || '',
+      features: [1,2,3,4].map(n => T['drawer.' + key + '.f' + n]).filter(Boolean),
+      tags:     [1,2,3].map(n => T['drawer.' + key + '.t' + n]).filter(Boolean),
+      sizes:    T['drawer.' + key + '.sizes'] || '',
+      cert:     s.cert,
+      extra:    T['drawer.' + key + '.extra'] || ''
+    };
+  }
+
+  let currentOpenProduct = null;
+
   function openProduct(key) {
-    const p = PRODUCTS[key];
+    const p = getProduct(key);
     if (!p) return;
+    currentOpenProduct = key;
 
     // Populate
     document.getElementById('drawer-category').textContent = p.category;
