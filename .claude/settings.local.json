@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "Bash(node \"c:/Users/DELL/Desktop/asar/screenshot.mjs\" http://localhost:3000 hero)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Read(//c/Users/DELL/AppData/Local/**)",
+      "Read(//c/ProgramData/**)",
+      "Bash(find /c -name node.exe -maxdepth 6)",
+      "Bash(\"/c/Users/DELL/.lmstudio/.internal/utils/node.exe\" --version)",
+      "Bash(AUTONODE=\"/c/Users/DELL/AppData/Local/Autodesk/webdeploy/production/12593c1ae56cc14e7d670f0d4833077eca3f3583/NODEJS\")",
+      "Bash(\"$AUTONODE/node.exe\" --version)",
+      "Bash(\"$AUTONODE/npm.cmd\" --version)",
+      "Bash(python -m playwright install chromium)",
+      "Bash(python screenshot_sections.py)",
+      "Bash(python -c \":*)"
+    ]
+  }
+}
